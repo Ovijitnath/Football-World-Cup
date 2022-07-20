@@ -1,0 +1,326 @@
+/*------------------- 
+Font Style Script
+--------- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@700&display=swap');
+
+/* common styles or utilities */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgb(255, 253, 253);
+    /* width: 1300px; */
+    padding: 25px;
+
+}
+
+/* Top-banner Styles */
+.top-banner {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background: #202020;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.top-banner-left {
+    width: 50%;
+    padding: 40px;
+}
+
+.section-tittle {
+    font-size: 50px;
+}
+
+.top-banner-right {
+    width: 50%;
+}
+
+.top-banner-right img {
+    width: 100%;
+    /* height: 100%; */
+    padding-left: 20px;
+}
+
+.top-paragraph {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.watchlive-button {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(41, 214, 15);
+    color: rgb(243, 247, 247);
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.watchlive-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.watchlive-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+}
+
+.watchlive-button:hover span {
+    padding-right: 25px;
+}
+
+.watchlive-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*---------------------------------
+ Options and Transfer
+ -------------------------------- */
+.options-transfer {
+    display: grid;
+    /* grid-template-columns: repeat(, 2fr); */
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 15px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+}
+
+.options {
+    /* display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 250px;
+    height: 250px;
+    color: white;
+    background-color: black;
+    margin: 25px; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.black-bg {
+    background-color: black;
+    margin: 14px;
+    padding: 20px;
+}
+
+.option-button {
+    text-align: center;
+    text-decoration: none;
+    height: 44px;
+    color: rgb(12, 12, 12);
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+.blog .option-button {
+    background-color: rgb(220, 93, 20);
+}
+
+.transfer {
+    display: grid;
+    grid-template-columns: repeat(3, 0.8fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+
+}
+
+.transfer-player {
+    border: 5px solid white;
+    padding-left: 10px;
+    background-color: rgb(242, 234, 234);
+}
+
+.transfer-banner img {
+    width: 100%;
+}
+
+.time-chat-icon {
+    font-size: 10px;
+}
+
+/*------------------
+     Footer
+  -----------------*/
+.footer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    background: #161616;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.footer-option {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-top {
+    text-align: center;
+    color: bisque;
+}
+
+hr {
+    border: 0.2px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-media {
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+.fa-brands {
+    background-color: aliceblue;
+    font-size: 20px;
+    width: 1fr;
+}
+
+.fa-brands:hover {
+    opacity: 0.7;
+}
+
+
+/* ------------------------------------------------------
+          Upcoming HTML page styles
+------------------------------------------------------ */
+.upcoming-match-page .option-button {
+    background-color: rgb(220, 93, 20);
+}
+
+.match {
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    grid-row-gap: 18px;
+    justify-items: center;
+}
+
+.teams {
+    border: 5px solid white;
+    border-radius: 3px solid rgb(236, 234, 234);
+    background-color: rgb(242, 234, 234);
+}
+
+.flags {
+    display: flex;
+    margin: 10px;
+}
+
+.flags .team-1,
+.team-2 {
+    width: 100%;
+}
+
+.flags h4 {
+    font-size: 20px;
+
+    margin: 10px;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.match-info p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.view {
+    text-align: center;
+    display: none;
+}
+
+.view-button {
+    text-align: center;
+    color: aliceblue;
+    background-color: coral;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+}
+
+/* ------------------------------------------------------
+          Media Query Section
+------------------------------------------------------ */
+
+/* Mobile Devices */
+@media only screen and(max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet Devices */
+@media only screen and(min-width:689)and (max-width:992px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        flex-direction: column;
+    }
+
+    .options-transfer {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .view {
+        display: inline;
+    }
+
+}
