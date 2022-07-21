@@ -3,7 +3,9 @@ Font Style Script
 --------- */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@700&display=swap');
 
-/* common styles or utilities */
+/* Common styles 
+     or
+         utilities */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,15 +19,15 @@ body {
 
 .container {
     background-color: rgb(255, 253, 253);
-    /* width: 1300px; */
+
     padding: 25px;
 
 }
 
-/* Top-banner Styles */
+/*-------------------------------------------------------
+ Top-banner Styles
+ ------------------------------------------------------ */
 .top-banner {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     display: flex;
     flex-direction: row;
     color: white;
@@ -49,7 +51,6 @@ body {
 
 .top-banner-right img {
     width: 100%;
-    /* height: 100%; */
     padding-left: 20px;
 }
 
@@ -97,31 +98,17 @@ body {
     right: 0;
 }
 
-/*---------------------------------
+/*---------------------------------------------------------
  Options and Transfer
- -------------------------------- */
+ -------------------------------------------------------- */
+
 .options-transfer {
     display: grid;
-    /* grid-template-columns: repeat(, 2fr); */
     grid-template-columns: 1fr 3fr;
     grid-column-gap: 15px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
 }
 
 .options {
-    /* display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    align-items: center;
-    justify-content: center;
-    row-gap: 10px;
-    width: 250px;
-    height: 250px;
-    color: white;
-    background-color: black;
-    margin: 25px; */
     display: flex;
     flex-direction: column;
 
@@ -171,9 +158,9 @@ body {
     font-size: 10px;
 }
 
-/*------------------
+/*------------------------------------------------------
      Footer
-  -----------------*/
+  ------------------------------------------------------*/
 .footer {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -299,28 +286,48 @@ hr {
 
     .top-banner {
         flex-direction: column;
+        align-items: center;
     }
 
+
+
+    .options-transfer,
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .options {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .transfer {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Tablet Devices */
-@media only screen and(min-width:689)and (max-width:992px) {
+@media only screen and(min-width:689px) and (max-width:992px) {
 
 
     .container {
         width: 100%;
     }
 
+    .view {
+        display: block;
+    }
+
     .top-banner {
         flex-direction: column;
+
     }
 
     .options-transfer {
         grid-template-rows: repeat(2, 1fr);
+        padding-right: 20px;
     }
 
-    .view {
-        display: inline;
-    }
+
 
 }
